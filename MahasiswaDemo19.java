@@ -11,6 +11,7 @@ public class MahasiswaDemo19 {
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
             System.out.println("5. Melihat Tugas Terbawah");
+            System.out.println("6. Hitung Jumlah Tugas");
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
@@ -60,9 +61,15 @@ public class MahasiswaDemo19 {
                     }
                     break;
                 
+                 case 6:
+                int jumlah = stack.count();
+                System.out.println("Jumlah tugas yang sudah dikumpulkan: " + jumlah);
+                System.out.println("Sisa kapasitas stack: " + (stack.size - jumlah));
+                    break;
+                
                 default:
                 System.out.println("Pilihan tidak valid");
             }
-        } while (pilih >= 1 && pilih <=5);
+        } while (pilih != 0);
     }
 }

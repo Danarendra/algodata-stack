@@ -58,6 +58,9 @@ public class StackTugasMahasiswa19 {
             return null;
         }
     }
+    public int count() {
+        return top + 1;
+    }
     public void print(){
         for (int i=top; i>=0; i--){
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
